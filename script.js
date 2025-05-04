@@ -30,8 +30,8 @@ function enterPass() {
 
     let password = "";
     for (let i = 0; i < inputPassword; i++) {
-        const randomPass = Math.floor(Math.random() * output.length);  // Correct random index calculation
-        password += output[randomPass]; // Add character at random index
+        const randomPass = Math.floor(Math.random() * output.length);  
+        password += output[randomPass]; 
     }
 
     result.textContent = `Your generated password is ${password}`;
